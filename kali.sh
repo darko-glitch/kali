@@ -92,3 +92,5 @@ sudo apt autoremove -y
 # Set vm.swappiness to 10
 sudo sh -c 'echo "vm.swappiness=10" >> /etc/sysctl.conf'
 
+wget https://cdn.akamai.steamstatic.com/client/installer/steam.deb -P ~/Downloads/
+sudo dpkg -i ~/Downloads/steam.deb
