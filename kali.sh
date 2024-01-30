@@ -24,7 +24,7 @@ sudo dpkg --add-architecture i386
 # Install Various Packages
 sudo nala install -y ufw gnome-shell-extension-dashtodock git gcc g++ make gdb mpv libavcodec-extra gstreamer1.0-libav gstreamer1.0-plugins-ugly zsh zsh-autosuggestions gstreamer1.0-vaapi build-essential dkms linux-headers-$(uname -r)
 sudo apt install -y libc6:amd64 libc6:i386 libegl1:amd64 libegl1:i386 libgbm1:amd64 libgbm1:i386 libgl1-mesa-dri:amd64 libgl1-mesa-dri:i386 libgl1:amd64 libgl1:i386 steam-libs-amd64:amd64 steam-libs-i386:i386
-
+sudo apt install -y libc6:amd64 libc6:i386 libegl1:amd64 libegl1:i386 libgbm1:amd64 libgbm1:i386 libgl1-mesa-dri:amd64 libgl1-mesa-dri:i386 libgl1:amd64 libgl1:i386 steam-libs-amd64:amd64
 # Configure Firewall (UFW)
 sudo ufw limit 22/tcp
 sudo ufw allow 80/tcp
