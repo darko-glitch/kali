@@ -38,11 +38,12 @@ sudo adduser dark render
 sudo adduser dark video
 
 git clone https://gitlab.com/kalilinux/packages/kali-themes.git ~/Downloads/kali-themes
-sudo mv -f kali-themes/share/themes/Kali* /usr/share/themes/
-sudo mv -f kali-themes/share/icons/* /usr/share/icons/
-sudo mv -f kali-themes/share/* /usr/share/
-sudo mv -f kali-themes/share/backgrounds/* /usr/share/backgrounds
-sudo mv -f kali-themes/share/gtksourceview-4/styles/* /usr/share/gtksourceview-4/styles
+sudo mv -f ~/Downloads/kali-themes/share/themes/Kali* /usr/share/themes/
+sudo mv -f ~/Downloads/kali-themes/share/icons/* /usr/share/icons/
+sudo mv -f ~/Downloads/kali-themes/share/* /usr/share/
+sudo mv -f ~/Downloads/kali-themes/share/backgrounds/* /usr/share/backgrounds
+sudo mv -f ~/Downloads/kali-themes/share/gtksourceview-4/styles/* /usr/share/gtksourceview-4/styles
+sudo cp ~/Downloads/kali-themes/share/qtermwidget5/color-schemes/Kali-Dark.colorscheme /usr/share/qtermwidget5/color-schemes/Kali-Dark.colorscheme
 sudo chmod 755 $(sudo find /usr/share/themes/Kali* -type d)
 sudo chmod 644 $(sudo find /usr/share/themes/Kali* -type f)
 sudo chmod 755 $(sudo find /usr/share/icons/Flat* -type d)
